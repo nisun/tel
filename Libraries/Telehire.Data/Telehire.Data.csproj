@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDAA8882-4484-45F0-8982-EE6207890C61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Telehire.Data</RootNamespace>
+    <AssemblyName>Telehire.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\ApplyForms\Libraries\AppForms.Data\bin\Debug\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataException.cs" />
+    <Compile Include="Domain\AuditAction.cs" />
+    <Compile Include="Domain\AuditSection.cs" />
+    <Compile Include="Domain\AuditTrail.cs" />
+    <Compile Include="Domain\BaseEntity.cs" />
+    <Compile Include="Domain\DefaultPermissionRecord.cs" />
+    <Compile Include="Domain\PermissionRecord.cs" />
+    <Compile Include="Domain\PermissionRoleMapping.cs" />
+    <Compile Include="Domain\PermissionType.cs" />
+    <Compile Include="Domain\PersonalInformation.cs" />
+    <Compile Include="Domain\RolePermission.cs" />
+    <Compile Include="Domain\Setting.cs" />
+    <Compile Include="Domain\SystemEmailTypes.cs" />
+    <Compile Include="Domain\SystemRoleNames.cs" />
+    <Compile Include="Domain\TelehireRole.cs" />
+    <Compile Include="Domain\UserPermission.cs" />
+    <Compile Include="Helper\INHibernateHelper.cs" />
+    <Compile Include="Helper\IRepository.cs" />
+    <Compile Include="Helper\NHibernateHelper.cs" />
+    <Compile Include="Helper\NHibernateRepository.cs" />
+    <Compile Include="Helper\NHSQL.cs" />
+    <Compile Include="Helper\NHSQLInterceptor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Telehire.Core\Telehire.Core.csproj">
+      <Project>{cc02565b-85d3-45b1-a7c8-ca3d817dcb06}</Project>
+      <Name>Telehire.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

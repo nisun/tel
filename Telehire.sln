@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{EAF2D633-11C8-4317-B8B2-BD7694B69FC5}"
+	ProjectSection(SolutionItems) = preProject
+		Changes.txt = Changes.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{35D63DBF-56E2-4BFB-A7B7-F0E0CEB37790}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telehire.Core", "Libraries\Telehire.Core\Telehire.Core.csproj", "{CC02565B-85D3-45B1-A7C8-CA3D817DCB06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telehire.Data", "Libraries\Telehire.Data\Telehire.Data.csproj", "{EDAA8882-4484-45F0-8982-EE6207890C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telehire.Services", "Libraries\Telehire.Services\Telehire.Services.csproj", "{2C82453E-8633-449A-A4FD-1FF662AF0DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telehire.Web", "Presentation\Telehire.Web\Telehire.Web.csproj", "{C3B482AA-1C06-43A5-B6AE-97206C90C9FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telehire.Web.Framework", "Presentation\Telehire.Web.Framework\Telehire.Web.Framework.csproj", "{1D793E07-B5FB-499B-974C-284B13DF181D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telehire.Admin", "Presentation\Telehire.Web\Telehire.Admin\Telehire.Admin.csproj", "{F2B39693-B661-4997-8AB9-884116205B03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC02565B-85D3-45B1-A7C8-CA3D817DCB06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC02565B-85D3-45B1-A7C8-CA3D817DCB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC02565B-85D3-45B1-A7C8-CA3D817DCB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC02565B-85D3-45B1-A7C8-CA3D817DCB06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAA8882-4484-45F0-8982-EE6207890C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAA8882-4484-45F0-8982-EE6207890C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAA8882-4484-45F0-8982-EE6207890C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAA8882-4484-45F0-8982-EE6207890C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C82453E-8633-449A-A4FD-1FF662AF0DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C82453E-8633-449A-A4FD-1FF662AF0DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C82453E-8633-449A-A4FD-1FF662AF0DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C82453E-8633-449A-A4FD-1FF662AF0DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B482AA-1C06-43A5-B6AE-97206C90C9FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B482AA-1C06-43A5-B6AE-97206C90C9FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B482AA-1C06-43A5-B6AE-97206C90C9FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B482AA-1C06-43A5-B6AE-97206C90C9FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D793E07-B5FB-499B-974C-284B13DF181D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D793E07-B5FB-499B-974C-284B13DF181D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D793E07-B5FB-499B-974C-284B13DF181D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D793E07-B5FB-499B-974C-284B13DF181D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B39693-B661-4997-8AB9-884116205B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B39693-B661-4997-8AB9-884116205B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B39693-B661-4997-8AB9-884116205B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B39693-B661-4997-8AB9-884116205B03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC02565B-85D3-45B1-A7C8-CA3D817DCB06} = {EAF2D633-11C8-4317-B8B2-BD7694B69FC5}
+		{EDAA8882-4484-45F0-8982-EE6207890C61} = {EAF2D633-11C8-4317-B8B2-BD7694B69FC5}
+		{2C82453E-8633-449A-A4FD-1FF662AF0DD7} = {EAF2D633-11C8-4317-B8B2-BD7694B69FC5}
+		{C3B482AA-1C06-43A5-B6AE-97206C90C9FF} = {35D63DBF-56E2-4BFB-A7B7-F0E0CEB37790}
+		{1D793E07-B5FB-499B-974C-284B13DF181D} = {35D63DBF-56E2-4BFB-A7B7-F0E0CEB37790}
+		{F2B39693-B661-4997-8AB9-884116205B03} = {35D63DBF-56E2-4BFB-A7B7-F0E0CEB37790}
+	EndGlobalSection
+EndGlobal
